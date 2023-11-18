@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Equity Business Solutions: Home</title>
+            <link rel="stylesheet" href="equity.css">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Oxygen:wght@300;700&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+        <meta name="description" content="Creative Solutions for your Toughest Graphic Design Problems">
+        <meta name="author" content="Caleb Scow">
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+    </head>
+    <body>
+        <!-- start of the page header -->
+        <header>
+            <img src="images/ebsLogo.png" alt="site logo" width="98" height="100">
+            <div>
+            <h1>Equity Business Solutions</h1>
+            <p>Creative Solutions for Difficult Design Problems</p>
+            </div>
+        </header>
+            <!-- start of the page navigation -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li class="active"><a href="pricing.html">Pricing</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </nav>
+            <!-- start of the page main content -->
+        <main>
+            <h1>Pricing for your Project</h1>
+                <p>Here at <b>Equity Business Solutions</b>, we believe that everyone has unique design needs. Because of this fact, In order to accurately assess what those needs are, we require a certain amount of information from you. Please fill out this form and we will get back to you within five business days.</p>
+            <h2>Request a Quote</h2>
+            <form method="get" class="myForm" action="response.html">
+                <fieldset>
+                    <legend>Customer Information</legend>
+                    <label>First Name*<input type="text" name="fname" required></label>
+                    <label>Last Name*<input type="text" name="lname" required></label>
+                    <label>Email*<input type="email" name="email" required></label>
+                    <label>Phone Number*<input type="tel" name="phone" required placeholder="801-867-5309"></label>
+                    <label>Business Name*<input type="text" name="business name" required></label>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Services</legend>
+                    <label><input type="checkbox" name="logo" value="chosen"> Logo Design</label>
+                    <label><input type="checkbox" name="brandid" value="chosen"> Brand Identity Development</label>
+                    <label><input type="checkbox" name="webdesign" value="chosen"> Website Design</label>
+                    <label><input type="checkbox" name="socials" value="chosen"> Social Media Graphics</label>
+                    <label><input type="checkbox" name="package" value="chosen"> Packaging Design</label>
+                    <label><input type="checkbox" name="illustrate" value="chosen"> Custom Illustrations</label>
+                    <label><input type="checkbox" name="other" value="chosen"> Something Else</label>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Timeline of Project</legend>
+                    <label>Preferred Timeline
+                    <select name="time">
+                        <option value="none">Please Select</option>
+                        <option value="slow">Slow (approx. 2 months)</option>
+                        <option value="normal">Normal (approx. 1 month)</option>
+                        <option value="fast">Fast (approx. 2 weeks)</option>
+                        <option value="wfast">Wicked Fast (approx. 1 week)</option>
+                    </select></label>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Preferred Method of Contact</legend>
+                    <label><input type="radio" name="method" value="textmessage">Text Message</label>
+                    <label><input type="radio" name="method" value="phonecall">Phone Call</label>
+                    <label><input type="radio" name="method" value="email">Email</label>
+                </fieldset>
+                
+                <label>Special Instructions
+                    <textarea name="instructions"></textarea>
+                </label>
+                
+            <input type="submit" value="Request your Quote">
+            </form>
+        </main>
+            <!-- start of the page footer -->
+        <footer>
+            <p>&copy; 2023 &bull; Equity Business Solutions &bull; <a href="mailto:nothisstrongestsoldier@gmail.com">Email us</a></p>
+            
+        </footer>
+        
+    </body>
+    
+</html>
