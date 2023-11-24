@@ -303,6 +303,7 @@ table.theblog tr:nth-child(odd) {
 
 table.theblog tr:hover {
     background-color: rgba(84,163,198,0.15);
+}
 /*Footer Style here*/
 
 footer {
