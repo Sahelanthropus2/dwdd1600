@@ -1,0 +1,323 @@
+/*prevent problems with different browsers*/
+* {box-sizing: border-box;}
+
+body {
+    font-family: 'Monterserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0;  }
+
+/*Header Style here*/
+
+header {
+    background-color: #b9bf1b;
+    padding: 1rem 2%;
+    padding: 1rem 2vw;
+    display: flex;
+    align-items:flex-end;
+}
+header h1 {
+    margin: 0;
+    color: #231f20;
+    font-size: 3rem;
+    font-weight: 700;
+}
+header div {
+    padding-left: 2vw;
+}
+header p {
+    text-align: center;
+    margin: 0;
+    color: #231f20;
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+    
+}
+
+/*Nav Style here*/
+@media only screen and (max-width: 600px) {
+    nav ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;   
+    }
+    nav a {
+        display: block;
+        padding: 1rem;
+        text-decoration: none;
+        font-weight: 600;
+        text-transform: uppercase;
+        text-align: center;
+        border-bottom: solid 1px #000;
+        color: #d81409;
+    }
+    nav .active a {
+        background-color: #54a3c6;
+        background-image: linear-gradient(to bottom, #54a3c6, #1a64b0);
+        color: white;
+    }
+}
+/**end of the media query**/
+
+/*wide screens**/
+
+@media only screen and (min-width: 651px) {
+    nav {
+    background-color: #54a3c6;
+    }
+    nav ul {
+    margin: 0;
+    padding: 0 2vw;
+    list-style-type: none;
+    display: flex;
+}
+nav a {
+    display: block;
+    padding: .83rem 2rem;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.1rem;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+nav .active a {
+    color: #000;
+}
+nav a:hover {
+    color: #d81409;
+}
+
+    
+}
+/**end of the media query**/
+
+/*Main Style here*/
+
+main {
+    padding: 1rem 2vw;  }
+
+.terminator {
+    width: 100%;
+    margin: 0;
+}
+.terminator img {
+    width: 100%;
+    height: auto;
+}
+
+main h1 {
+    margin-bottom: .2rem;
+    margin-top: .2rem;
+    color: #d81409; }
+
+main h2 {
+    color: #54a3c6;
+    margin-bottom: .2rem;   }
+
+main p {
+    color: #231f20;
+    margin: 0 0 .3rem 0;    }
+
+main ol {
+    color: #231f20;
+    padding: .5rem 3vw;
+    width: 12.5rem;
+    background-color: #b9bf1b;
+    border: 2px solid #d81409;
+    border-radius: .5rem; }
+
+main dl dt {
+    color: #d81409;
+    font-weight: 700;}
+
+main dl dd {
+    padding-right: 3vw;
+    color: #231f20;
+    font-size: .9rem;   }
+
+main ul {
+    list-style-type: square;   }
+
+main ul li {
+    line-height: 125%;
+    margin-bottom: .5rem;
+    font-size: .9rem;   }
+
+main address {
+    font-style: normal;
+    background-color: #b9bf1b;
+    padding: .5rem;
+    width: 12.5rem;
+    border: 2px solid #d81409;
+    border-radius: .5rem;}
+
+main a {
+    color: #d81409; }
+
+main a:hover {
+    color: #54a3c6;   }
+
+figure.wrapped {
+    width: 30%;
+    margin: 0 0 0 2%;
+    float: right;
+}
+
+figure.wrapped img {
+    width: 100%;
+    height: auto;
+    
+}
+
+figure.wrapped figcaption {
+    text-align: center;
+    font-size: .8rem;
+    font-weight: 700;
+    color: #d81409;
+    
+}
+
+div.gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.gallery figure {
+    margin: .5rem 2% 0 0;
+    
+}
+
+div.gallery figcaption {
+    text-align: center;
+    font-size: .8rem;
+    font-weight: 700;
+    color: #d81409;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+} 
+.gallery section {
+    flex-basis: 50%;
+    margin: 1rem 0;
+    
+}
+.gallery span {
+    display: block;
+    text-align: center; 
+    font-weight: 700;
+    color: #895772;
+}
+.gallery img {
+    width: 98%;
+    height: auto;
+    
+}
+
+.gallery img:hover {
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.8);
+}
+
+.myForm fieldset {
+    border: 1px solid #54a3c6;
+    border-radius:3px;
+    margin-bottom: 1rem;
+}
+
+.myForm legend {
+    color: #54a3c6;
+    font-size: .8rem;
+}
+
+.myForm label {
+    margin: .6rem;
+}
+
+.myForm label, .myForm select, .myForm [type=text], .myForm [type=email], .myForm [type=tel], .myForm textarea {
+    display: block;
+}
+
+.myForm [type=text], .myForm [type=tel], .myForm [type=email], .myForm select, .myForm textarea {
+    border: solid 1px #231f20;
+    padding: .3rem;
+    width: 210px;
+    border-radius: .4rem;
+    font-family: 'Monterserrat', sans-serif;
+    font-weight: 200;
+}
+
+.myForm textarea {
+    height: 6rem;
+}
+
+.myForm :required {
+    background-color: rgba(84,163,198,0.15);
+}
+
+.myForm [type=submit] {
+    background-color: #d81409;
+    border: none;
+    padding: 1.2rem 2rem;
+    border-radius: 8px;
+    color: white;
+    margin: 1rem 0 0 1vw;
+    font-family: 'Monterserrat', sans-serif;
+    font-weight: 700;
+}
+
+.myForm [type=submit]:hover {
+    background-color: #54a3c6;
+    border: none;
+    padding: 1.2rem 2rem;
+    border-radius: 8px;
+    color: white;
+    margin: 1rem 0 0 1vw;
+    font-family: 'Monterserrat', sans-serif;
+    font-weight: 700;
+}
+
+table.theblog {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table.theblog th {
+    background-color: #54a3c6;
+    color: white;
+    padding: .5rem 2vw;
+    text-align: left;
+}
+
+table.theblog td {
+    color: #d81409;
+    padding: .4rem 2vw;
+}
+
+table.theblog tr:nth-child(odd) {
+    background-color: #f7f7f7;
+}
+
+table.theblog tr:hover {
+    background-color: rgba(84,163,198,0.15);
+/*Footer Style here*/
+
+footer {
+    background-color: #b9bf1b;
+    text-align: center;
+    color: #231f20;
+    padding: .8rem 0;
+    font-size: .8rem;
+    clear: both;
+}
+footer a {
+    color: #231f20;
+}
+
+header, nav, main, footer {
+   max-width: 64rem;
+    margin: 0 auto;
+}
